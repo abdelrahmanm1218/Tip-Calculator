@@ -1,0 +1,265 @@
+* {
+    font-family: "Space Mono", monospace;
+}  
+.body {
+    width:100%;
+    height: 100vh;
+    margin:0;
+    padding: 0;   
+}
+
+.container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #c5e4e7;
+    /* background-color: hsl(172, 67%, 45%); */
+    width: 100%;
+    height: 100vh;
+    margin:0;
+    padding:0;
+}
+.container h3 {
+    color: #34595a;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin:0
+}
+.container .main-div {
+    background-color: #fff;
+    width: 60%;
+    height: 60vh;
+    margin-top: 40px;
+    border-radius: 15px;
+    padding: 15px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .main-div > div {
+    width: 45%;;
+    height: 90%;
+    border-radius: 12px;
+}
+.container .main-div .form {
+    padding: 10px;
+    
+}
+.container .main-div .form form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.container .main-div .form form .row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 0 20px; */
+    margin-top: 10px;
+    /* margin-bottom: 10px; */
+    flex-direction: column;
+}
+.container .main-div .form form .row h5 {
+    width:100%;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    margin:10px 0 5px ;
+    padding:0;
+    color:#6f7b7b;
+}
+.container .main-div .form form .row input {
+    width:95%;
+    display: inline-block;
+    background-color: #f3f8fb;
+    height:25px;
+    outline: none;
+    border: none;
+    padding:10px;
+    border-radius: 5px;;
+    color: #00474b;
+    caret-color: #00474b;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: right;
+
+}
+.container .main-div .form form .row:nth-of-type(1) input::before {
+    font-family: "Font Awesome 5 Free";
+    content: '\f024';
+    font-weight: bold;
+    color: #a1b5b6;
+    display: inline-block;
+}
+.container .main-div .form form .row input:focus {
+    border: 2px solid #00474b;
+}
+.container .main-div .form form .row:nth-last-of-type(2) .percentage {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(50px, 1fr));
+    gap: 10px;
+    margin-top:5px;
+    width:100%;
+}
+.container .main-div .form form .row:nth-last-of-type(2) .percentage .box {
+    background-color: #00474b;
+    padding:10px 20px;
+    text-align: center;
+    border-radius: 7px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 17px;;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease;
+    border: 3px solid transparent;
+}
+.container .main-div .form form .row:nth-last-of-type(2) .percentage .box:nth-of-type(6) {
+    background-color:#f3f8fb;
+    padding:0
+}
+.container .main-div .form form .row:nth-last-of-type(2) .percentage .box:nth-of-type(6) input {
+    display: inline-block;
+    width:100%;
+    outline: 0;
+    border: 3px solid transparent;
+    color: #00474b;
+    caret-color: #54a298;
+    font-size: 20px;
+}
+.container .main-div .form form .row:nth-last-of-type(2) .percentage .box:nth-of-type(6) input:focus {
+border: 3px solid #54a298;
+
+}
+.container .main-div .form form .row:nth-last-of-type(2) .percentage .box:not(:nth-of-type(6)).active {
+    background-color: #2eb9a9;
+    color: #00474b;
+    }
+.container .main-div .form form .row:nth-last-of-type(2) .percentage .box:not(:nth-of-type(6)):hover {
+    background-color: #9fe8df;
+    color: #00474b;
+}
+.container .main-div .result {
+    background-color: #00474b;
+    padding: 10px 10px;
+}
+.container .main-div .result .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.container .main-div .result .row .text h5 {
+    color: #fff;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    margin:10px 0 0px ;
+} 
+.container .main-div .result .row .text span {
+    color: #608e92;
+    font-size: 14px;
+    font-weight: 700;
+
+}
+.container .main-div .result .row .number {
+    color: #2eb9a9;
+    font-weight: 700;
+    font-size: 35px;
+}
+.container .main-div .result .row.reset {
+    height:50%;
+    display: flex;
+    align-items: flex-end;
+}
+.container .main-div .result .row.reset span {
+    color: #00474b;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 17px;
+    border-radius: 5px;;
+    padding:10px;
+    display:inline-block;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    text-align: center;
+    position: relative;
+    top:-35px;
+    background-color: #0d686d;
+    transition: all 0.5s ease;
+    }
+.container .main-div .result .row.reset span.active {
+background-color: #2eb9a9;
+
+}
+.container .main-div .result .row.reset span.active:hover {
+    background-color: #9fe8df;
+    color: #00474b;
+}
+#bill.error {
+    border:2px solid red;
+}
+#no-of-people.error {
+    border:2px solid red;
+
+}
+#btn {
+    color: #2eb9a9;
+    background-color: #00474b;
+    padding: 10px 20px;
+    margin: 20px auto;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+#btn:hover {
+    color:#00474b ;
+    background-color:#2eb9a9 ;
+    
+}
+/*mobile screen*/
+@media (width <= 767px){
+    .container {
+        justify-content: flex-start;
+        height: fit-content;
+    }
+    .container h3:nth-of-type(1){
+        margin-top:25px;
+    }
+    .container .main-div {
+        flex-direction: column;
+        width:100%;
+        height: 100%;
+        justify-content: flex-start;
+        margin-top: 10px;
+        padding:0
+    }
+    .container .main-div > div {
+        width:100%;
+        height: fit-content;
+    }
+    .container .main-div .form form {
+        padding:10px 20px
+    }
+    .container .main-div .result {
+        padding:0;
+        /* width:90%; */
+    }
+    .container .main-div .result .row.reset {
+        height: fit-content;
+        margin-top: 40px;
+        margin-bottom:0;
+    }
+    .container .main-div .form form .row:nth-last-of-type(2) .percentage {
+        grid-template-columns: repeat(2, minmax(40px, 1fr));
+    }
+
+}
