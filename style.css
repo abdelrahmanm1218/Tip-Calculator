@@ -117,6 +117,8 @@
     align-items: center;
     transition: all 0.5s ease;
     border: 3px solid transparent;
+    /* Added cursor pointer */
+    cursor: pointer;
 }
 .container .main-div .form form .row:nth-last-of-type(2) .percentage .box:nth-of-type(6) {
     background-color:#f3f8fb;
